@@ -1,0 +1,15 @@
+School Management System
+Problem Statement:
+Create a system to manage a school:
+Class Person as a base class with name, address.
+Subclasses Student, Teacher, and Staff.
+Student has grades, attendance records.
+Teacher has subjects taught.
+Staff has job roles.
+Use inheritance and polymorphism to manage different person types.
+Override toString() to display relevant information per subclass.
+Implement method overloading for updating records.
+Key OOP concepts:
+Inheritance and polymorphism for person types.
+Method overloading for updates.
+Encapsulation of sensitive data.
