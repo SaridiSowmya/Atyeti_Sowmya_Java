@@ -1,7 +1,7 @@
 package bankingsystem;
 
 class SavingsAccount extends BankAccount {
-    private double interestRate; // e.g. 0.03 = 3%
+    private double interestRate; 
 
     public SavingsAccount(String accountNumber, double balance, double interestRate) {
         super(accountNumber, balance);
