@@ -1,0 +1,11 @@
+🧩 Problem 2: Banking System
+Create a base class BankAccount with:
+account number
+balance
+methods: deposit(), withdraw(), and displayBalance()
+Create subclasses:
+SavingsAccount that adds an interestRate and applies interest on deposit
+CurrentAccount that adds an overdraftLimit and allows overdraft withdrawal
+Task:
+Create and use both account types.
+Demonstrate withdrawal and deposit behaviors with edge cases (e.g., overdraft, interest).

@@ -1,0 +1,9 @@
+🧩 Problem 1: Employee Hierarchy
+Create a class Employee with attributes name, id, and salary, and a method displayInfo().
+Then, create two subclasses:
+Manager with an additional attribute department
+Developer with an additional attribute programmingLanguage
+Override displayInfo() in both subclasses to include the extra information.
+Task:
+Create objects of Manager and Developer and call displayInfo() on each.
+Demonstrate polymorphism using a reference of type Employee.
