@@ -1,0 +1,5 @@
+Exception Handling in Multi-Threaded Applications
+Problem Statement:
+Develop a multi-threaded task execution system where exceptions from multiple threads are handled properly.
+Ensure that exceptions thrown by worker threads do not cause the main thread to fail.
+Implement a mechanism to collect exceptions from different threads and log them in an error report.

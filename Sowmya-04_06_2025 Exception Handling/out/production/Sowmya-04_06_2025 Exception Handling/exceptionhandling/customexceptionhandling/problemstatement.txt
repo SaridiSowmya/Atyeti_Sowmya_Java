@@ -1,0 +1,6 @@
+Custom Exception Handling in a Banking System
+Problem Statement:
+Design a banking system that validates user transactions. Implement custom exceptions for cases such as:
+InsufficientFundsException (when a user tries to withdraw more than the balance)
+NegativeDepositException (if a user enters a negative deposit amount)
+UnauthorizedAccessException (if an unauthorized user tries to access an account)

@@ -1,0 +1,23 @@
+ E-Commerce Checkout System with Layered Error Management
+Problem Statement:
+In an e-commerce app:
+
+The controller calls the service layer
+
+Service calls payment, inventory, and shipping subsystems
+
+Handle:
+
+Payment failures → PaymentFailedException
+
+Inventory issues → OutOfStockException
+
+Shipping issues → ShippingServiceException
+
+Challenge:
+
+Each failure must be wrapped and reported to the UI.
+
+The error UI should show different messages per layer but log full root cause.
+
+Exception chaining must retain the exact path of failure.
