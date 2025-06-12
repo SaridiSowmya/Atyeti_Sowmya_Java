@@ -1,0 +1,12 @@
+Logistics Company Parcel Tracker
+Scenario: Build a parcel tracking system that:
+
+Loads parcel data (ID, status, location, timestamps) from a file using file handling.
+
+Stores and manages parcel data using Map<String, Parcel>.
+
+Uses streams to generate status reports like delayed shipments or packages in a certain region.
+
+Spawns multiple threads to simulate concurrent updates from delivery agents.
+
+Implements exception handling for file issues, malformed input, thread interruptions, etc.
