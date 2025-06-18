@@ -1,0 +1,7 @@
+Iterate over an ArrayList using index (for (int i = 0; i < list.size(); i++)) and add elements during iteration.
+
+What happens if you add at the end vs in the middle?
+
+Compare behavior with Iterator approach.
+
+Goal: Understand iterator vs index-based iteration behavior under modification.

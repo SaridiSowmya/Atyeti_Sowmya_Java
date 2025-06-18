@@ -1,0 +1,7 @@
+Adding at the end (add("X")) — No problem, loop continues.
+
+Adding in the middle (add(i+1, "Y")) — Also works, but:
+
+It shifts the rest of the elements, so the iteration might skip or reprocess elements if you're not careful.
+
+No ConcurrentModificationException is thrown — because index-based iteration doesn’t use fail-fast checks.

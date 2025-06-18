@@ -1,0 +1,17 @@
+Imp Notes:
+__________
+
+subList()	Returns a backed view from fromIndex (inclusive) to toIndex (exclusive)
+subList.remove()	Affects original list
+subList.add()	Affects original list
+originalList.add() (outside sublist range)	Invalidates the sublist; throws ConcurrentModificationException if you later touch it
+
+ Important Warning:
+You must not structurally modify the original list (e.g., add/remove elements) after creating a sublist — unless you're done using the sublist.
+
+How to avoid this issue?
+
+Option 1: Create a copy of the sublist:
+List<String> safeCopy = new ArrayList<>(originalList.subList(1, 4));
+
+Option 2: Avoid mixing structural modifications between the list and its sublist unless you're very careful.

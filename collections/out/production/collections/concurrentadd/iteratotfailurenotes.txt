@@ -1,0 +1,5 @@
+Iterator tracks a modCount (modification count).
+
+list.add("X") changes the list outside the iterator.
+
+Next call to iterator.next() detects that modCount changed → throws ConcurrentModificationException.

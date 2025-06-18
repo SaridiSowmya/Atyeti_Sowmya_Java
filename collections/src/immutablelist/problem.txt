@@ -1,0 +1,11 @@
+Problem:
+Convert an ArrayList into an unmodifiable list using:
+
+Collections.unmodifiableList(list)
+
+List.copyOf(list)
+
+Now try modifying the returned list. What exception is thrown? How is it different?
+
+Goal: Understand immutability, defensive copies, and Java 9+ behavior.
+
