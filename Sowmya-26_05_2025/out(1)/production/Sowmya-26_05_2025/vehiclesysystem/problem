@@ -1,0 +1,8 @@
+🧩 Problem 3: Vehicle System
+Create a base class Vehicle with properties like make, model, and year. Include a method startEngine().
+Create subclasses:
+Car that adds numberOfDoors
+Truck that adds payloadCapacity
+Task:
+Override the startEngine() method in both subclasses with different messages.
+Create a method that accepts a Vehicle and calls startEngine() (demonstrate polymorphism).

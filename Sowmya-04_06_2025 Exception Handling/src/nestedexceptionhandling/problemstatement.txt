@@ -1,0 +1,6 @@
+Nested Exception Handling in File Processing
+Problem Statement:
+Create a file reading application that:
+Reads multiple files and processes them.
+Handles errors like FileNotFoundException, IOException, and NumberFormatException (when converting file data).
+Ensures that all files are closed properly, even if an exception occurs (use try-with-resources).

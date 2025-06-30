@@ -1,0 +1,6 @@
+Media Player
+Problem: Create a media player that can play different file formats.
+Concepts: Interfaces
+Requirements:
+Define an interface Playable with methods play() and stop().
+Implement this interface in classes like MP3Player, MP4Player, and AVIPlayer
