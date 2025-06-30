@@ -1,0 +1,15 @@
+Problem Statement:
+
+Design an appointment system for a medical clinic:
+Class Doctor with attributes doctorId, name, specialization.
+Class Patient with patientId, name, age, and medical history.
+Class Appointment linking Patient and Doctor with appointmentDate and status.
+Use inheritance for different types of doctors (GeneralPractitioner, Specialist).
+Implement method overriding to display doctor availability differently by specialization.
+Use encapsulation to secure patient medical data.
+Create methods to schedule, cancel, and reschedule appointments.
+
+Key OOP concepts:
+Inheritance and polymorphism in doctors.
+Encapsulation for sensitive patient data.
+Method overriding for behavior customization.

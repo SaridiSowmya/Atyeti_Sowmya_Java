@@ -1,0 +1,4 @@
+Problem Statement: Restaurant Order Management System
+🎯 Objective:
+Design a system to manage food orders in a restaurant using enums to represent the status of each order and the type of meal.
+The system should allow updating order status, filtering orders by status, and displaying order summaries.
