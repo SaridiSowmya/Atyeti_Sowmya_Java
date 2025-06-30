@@ -1,0 +1,8 @@
+Test ArrayList behavior when adding null values:
+
+How many nulls can it contain?
+
+What happens when calling contains(null), remove(null), or indexOf(null)?
+
+Goal: Understand null-safety and how ArrayList internally handles null.
+

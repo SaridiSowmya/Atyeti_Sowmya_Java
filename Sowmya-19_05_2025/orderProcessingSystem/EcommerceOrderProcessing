@@ -1,0 +1,15 @@
+E-commerce Order Processing
+Problem Statement:
+Create an order processing system:
+Product class with id, name, price, and stockQuantity.
+OrderItem class with a product and quantity.
+Order class containing multiple OrderItems, order date, and customer info.
+Different payment methods implemented via an interface Payment with pay() method.
+Support for CreditCardPayment, PayPalPayment, and WalletPayment, each with unique processing logic.
+Use polymorphism to process different payment types.
+Use encapsulation to protect order and payment data.
+Implement exception handling for insufficient stock.
+Key OOP concepts:
+Interfaces for payment methods.
+Polymorphism for payment processing.
+Encapsulation and exception handling.
