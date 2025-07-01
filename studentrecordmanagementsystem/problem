@@ -1,0 +1,10 @@
+ Student Record Management System
+Scenario:
+Store student records like name, roll number, and marks.
+Requirements:
+- Add/edit/delete students
+- Calculate total and average
+- Sort by name/marks
+- Use CSV/text file for storage
+Concepts:
+File I/O, Collections, Comparator, OOP
