@@ -1,0 +1,20 @@
+Problem Statement: SmartTaskScheduler
+You're building a task scheduler for a system where tasks must be executed based on priority. Tasks have a priority (1-highest to 10-lowest) and a name. Your scheduler should always pick and execute the highest priority task first.
+
+Input: Producer threads continuously add tasks to a shared PriorityQueue.
+
+Consumer thread(s) fetch and execute tasks based on priority.
+
+Key Concepts:
+Implement a custom Task class with Comparable for priority.
+
+Use PriorityQueue<Task>.
+
+Use a shared monitor (lock or blocking queue wrapper) for thread-safety.
+
+Challenges:
+Thread-safe access to PriorityQueue.
+
+Avoid starvation for low-priority tasks.
+
+Graceful shutdown.

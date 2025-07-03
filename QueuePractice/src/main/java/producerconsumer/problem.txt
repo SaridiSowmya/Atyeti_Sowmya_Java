@@ -1,0 +1,23 @@
+Producer-Consumer using LinkedBlockingQueue
+Problem Statement: ImageProcessingPipeline
+Simulate an image processing pipeline where:
+
+Multiple camera feeds (producers) keep generating image frames.
+
+A pool of worker threads (consumers) processes each frame.
+
+Use LinkedBlockingQueue to allow buffering between producers and consumers.
+
+Key Concepts:
+Multiple producer and consumer threads.
+
+LinkedBlockingQueue<byte[]> for simulated image data.
+
+Graceful shutdown signal (e.g., poison pill).
+
+Challenges:
+Blocking behavior when the queue is full.
+
+Efficient use of thread pool.
+
+Monitor processing throughput.
