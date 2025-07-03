@@ -1,0 +1,11 @@
+Recursive File Search with Fork/Join
+Problem Statement:
+Search for a keyword in all files under a directory in parallel.
+What You Learn:
+Fork/Join framework
+Parallel recursive processing
+How to Do:
+Create class FileSearchTask extends RecursiveTask<List<File>>
+For each directory, fork a task for subdirectories
+For each file, search for keyword
+Use ForkJoinPool.commonPool().invoke(new FileSearchTask(...));

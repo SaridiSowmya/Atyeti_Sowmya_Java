@@ -1,0 +1,8 @@
+Multiple threads (philosophers) share limited resources (chopsticks). Prevent deadlocks.
+ What You Learn:
+Lock ordering
+Deadlock detection/prevention
+How to Do:
+Represent chopsticks as Object locks.
+Each thread tries to acquire 2 locks.
+Always acquire locks in same global order (e.g., lower ID first).

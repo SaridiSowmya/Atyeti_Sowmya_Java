@@ -1,0 +1,10 @@
+Task Timeout Mechanism
+ Problem Statement:
+Abort a task if it runs longer than N seconds.
+What You Learn:
+Callable, Future.get(timeout)
+Interrupting stuck threads
+How to Do:
+Submit task using ExecutorService.submit(Callable)
+Use future.get(5, TimeUnit.SECONDS)
+Catch TimeoutException and call future.cancel(true)

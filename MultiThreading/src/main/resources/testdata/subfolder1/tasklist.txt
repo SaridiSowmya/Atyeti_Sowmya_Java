@@ -1,0 +1,3 @@
+- Fix login bug
+- TODO: Implement forgot password feature
+- Refactor user service

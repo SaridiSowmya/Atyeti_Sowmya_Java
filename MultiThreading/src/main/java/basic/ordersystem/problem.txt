@@ -1,0 +1,13 @@
+Order Processing System (Producer-Consumer)
+Problem Statement:
+Simulate an order system where one thread generates orders (producer), and multiple threads process them (consumers).
+What You Learn:
+Thread-safe queue usage
+BlockingQueue
+Basic thread creation and coordination
+How to Do:
+Create an Order class (POJO).
+Use BlockingQueue<Order> to share data between threads.
+Producer thread → queue.put(order)
+Consumer thread → queue.take()
+Start N consumer threads from ExecutorService.

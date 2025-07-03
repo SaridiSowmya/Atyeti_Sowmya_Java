@@ -1,0 +1,14 @@
+Bank Transfer Simulation (Avoiding Race Conditions)
+
+Problem Statement:
+Simulate multiple transfers between bank accounts concurrently. Ensure balance consistency.
+
+What You Learn:
+synchronized/ReentrantLock for critical sections
+Avoiding race conditions
+
+How to Do:
+Create BankAccount class with balance, withdraw(), deposit().
+Create transfer method that locks both source and destination accounts.
+Use ExecutorService to run many transfers in parallel.
+Print final balances to verify no inconsistency.
