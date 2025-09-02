@@ -1,0 +1,6 @@
+package com.example.healthcareappointmentsystem.repository;
+
+import com.example.healthcareappointmentsystem.model.Doctor;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DoctorRepository extends JpaRepository<Doctor, Integer> {}
