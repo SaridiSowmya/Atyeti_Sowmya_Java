@@ -43,4 +43,17 @@ public class ProducerController {
     }
     }
 
+    @PostMapping("/publishing")
+    public ResponseEntity<?> publishEventTo(@RequestBody Customer customer)
+    {
+        try{
+            kafkamessagepublisher.publishEventToTopic(customer);
+            return ResponseEntity.ok("message published" +customer.toString());
+        }
+        catch(Exception e){
+            return ResponseEntity.status(500).body("error" +e.getMessage());
+
+        }
+    }
+
 }

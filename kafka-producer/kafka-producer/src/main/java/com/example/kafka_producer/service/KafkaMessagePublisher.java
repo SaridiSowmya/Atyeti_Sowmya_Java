@@ -40,4 +40,18 @@ public class KafkaMessagePublisher {
         });
 
     }
+
+    public void publishEventToTopicPartition(Customer customer) {
+
+        CompletableFuture<SendResult<String,Object>> future=kafkatemplate.send("learning-topic2",2,null,customer);
+
+        future.whenComplete((result,ex)-> {
+            if(ex!=null) {
+                System.err.println("error sending message"+customer.getName());
+            }
+            else{
+                System.out.println("message sent succesfully"+customer.toString() +result.getProducerRecord().value());
+            }
+        });
+}
 }
