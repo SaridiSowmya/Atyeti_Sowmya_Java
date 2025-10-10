@@ -1,5 +1,6 @@
 package com.example.kafka_producer.config;
 
+import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,11 @@ import java.util.Map;
 
 @Configuration
 public class KafkaProducerConfig {
+
+    @Bean
+    public NewTopic createTopic(){
+        return new NewTopic("learning-topic1",4,(short) 1);
+    }
 
     @Bean
     public Map<String,Object> producerConfig(){

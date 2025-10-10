@@ -13,7 +13,7 @@ public class KafkaMessagePublisher {
    private KafkaTemplate<String,Object> kafkatemplate;
     public void publishMessage(String message) {
 
-      CompletableFuture<SendResult<String,Object>> future=kafkatemplate.send("test2",message);
+      CompletableFuture<SendResult<String,Object>> future=kafkatemplate.send("learning-topic1",message);
 
       future.whenComplete((result,ex)-> {
           if(ex!=null) {
