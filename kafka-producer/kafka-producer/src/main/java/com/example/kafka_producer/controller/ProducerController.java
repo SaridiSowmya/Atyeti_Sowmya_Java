@@ -1,12 +1,10 @@
 package com.example.kafka_producer.controller;
 
+import com.example.kafka_producer.dto.Customer;
 import com.example.kafka_producer.service.KafkaMessagePublisher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/producer")
@@ -30,6 +28,19 @@ public class ProducerController {
 
         }
 
+    }
+
+    @PostMapping("/publish")
+    public ResponseEntity<?> publishEvent(@RequestBody Customer customer)
+    {
+        try{
+            kafkamessagepublisher.publishEventToTopic(customer);
+            return ResponseEntity.ok("message published" +customer.toString());
+        }
+        catch(Exception e){
+            return ResponseEntity.status(500).body("error" +e.getMessage());
+
+    }
     }
 
 }
