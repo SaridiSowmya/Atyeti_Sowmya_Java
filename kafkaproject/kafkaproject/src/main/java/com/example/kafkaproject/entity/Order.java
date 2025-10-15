@@ -12,7 +12,7 @@ public class Order {
 
     private String productName;
     private int quantity;
-    private String status; // PLACED, CONFIRMED, SHIPPED, DELIVERED
+    private String status;
 
     public Order() {}
 
