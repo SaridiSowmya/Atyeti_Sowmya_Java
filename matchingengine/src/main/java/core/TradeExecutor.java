@@ -2,6 +2,8 @@ package core;
 import model.Order;
 import model.Trade;
 import model.TradeType;
+import trading.CSVOrderLoader;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,18 @@ public class TradeExecutor {
        //reduces the remaining quantity of both orders
         buyOrder.fill(quantity);
         sellOrder.fill(quantity);
+
+        if (buyOrder.isFilled()) {
+            CSVOrderLoader.fullyFilledBuy++;
+        } else if (buyOrder.getRemainingQuantity() < buyOrder.getOriginalQuantity()) {
+            CSVOrderLoader.partiallyFilledBuy++;
+        }
+
+        if (sellOrder.isFilled()) {
+            CSVOrderLoader.fullyFilledSell++;
+        } else if (sellOrder.getRemainingQuantity() < sellOrder.getOriginalQuantity()) {
+            CSVOrderLoader.partiallyFilledSell++;
+        }
 
         Trade trade = new Trade(buyOrder.getOrderId(), sellOrder.getOrderId(), price, quantity, System.currentTimeMillis());
         trades.add(trade);

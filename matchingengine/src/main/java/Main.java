@@ -45,6 +45,18 @@ public class Main {
         System.out.printf("Total trades executed         : %,d%n", trades.size());
         System.out.printf("Matching duration              : %,d ms%n", durationMs);
 
+
+        System.out.println("\n" + "=".repeat(60));
+        System.out.println("               ORDER STATUS SUMMARY");
+        System.out.println("=".repeat(60));
+
+        System.out.printf("Fully Filled BUY Orders      : %,d%n", CSVOrderLoader.fullyFilledBuy);
+        System.out.printf("Partially Filled BUY Orders  : %,d%n", CSVOrderLoader.partiallyFilledBuy);
+        System.out.printf("Fully Filled SELL Orders     : %,d%n", CSVOrderLoader.fullyFilledSell);
+        System.out.printf("Partially Filled SELL Orders : %,d%n", CSVOrderLoader.partiallyFilledSell);
+
+        System.out.println("=".repeat(60));
+
         System.out.println("============================================");
         System.out.println("Sample Executed Trades :");
         System.out.println("============================================");

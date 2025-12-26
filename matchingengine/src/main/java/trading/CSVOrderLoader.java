@@ -15,12 +15,18 @@ import java.util.logging.Logger;
 public class CSVOrderLoader {
 
     private static final Logger log = Logger.getLogger(CSVOrderLoader.class.getName());
-    private static final String BUY_ORDERS_PATH ="C:\\Users\\SowmyaSaridi\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Sowmya_Java\\matchingengine\\src\\main\\resources\\buy_orders.csv";
-    private static final String SELL_ORDERS_PATH ="C:\\Users\\SowmyaSaridi\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Sowmya_Java\\matchingengine\\src\\main\\resources\\sell_orders.csv";
+    private static final String BUY_ORDERS_PATH ="src/main/resources/buy_orders.csv";//"C:\\Users\\SowmyaSaridi\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Sowmya_Java\\matchingengine\\src\\main\\resources\\buy_orders.csv";
+    private static final String SELL_ORDERS_PATH ="src/main/resources/sell_orders.csv";//"C:\\Users\\SowmyaSaridi\\OneDrive - Atyeti Inc\\Desktop\\Atyeti_Sowmya_Java\\matchingengine\\src\\main\\resources\\sell_orders.csv";
     public static long buySubmitted = 0;
     public static long buyRejected = 0;
     public static long sellSubmitted = 0;
     public static long sellRejected = 0;
+
+
+    public static long fullyFilledBuy = 0;
+    public static long fullyFilledSell = 0;
+    public static long partiallyFilledBuy = 0;
+    public static long partiallyFilledSell = 0;
     private static final DateTimeFormatter TS_FORMAT =
             DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
