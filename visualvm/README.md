@@ -13,7 +13,7 @@ Analyze Thread states
 
 Generate Thread Dumps
 
-Requirements
+1)Requirements
 --------------------------
 
 JDK 24 (or any recent JDK)
@@ -22,7 +22,7 @@ IntelliJ IDEA
 
 VisualVM installed and unzipped
 
-Enable G1GC in IntelliJ
+2)Enable G1GC in IntelliJ
 ---------------------------------
 Go to:
 Run → Edit Configurations → VM Options
@@ -30,7 +30,7 @@ Add:
 -XX:+UseG1GC -Xms256m -Xmx256m
 Apply and Run.
 
-GC Monitoring Example
+3)GC Monitoring Example
 ------------------------------
 Code: TestGC.java
 public class TestGC {
@@ -42,7 +42,7 @@ Thread.sleep(200);
 }
 }
 
-What You Should See in VisualVM
+4)What You Should See in VisualVM
 -----------------------------------
 Open:
 Applications → Your Process → Visual GC tab
@@ -56,7 +56,7 @@ Old Gen behavior
 
 GC count increasing
 
-Humongous Allocation Example
+5)Humongous Allocation Example
 -------------------------------------
 public class TestGC {
 public static void main(String[] args) throws Exception 
@@ -75,10 +75,11 @@ Old Gen grows
 
 GC Cause shows: G1 Humongous Allocation
 
-Deadlock Detection Example
+6)Deadlock Detection Example
 ------------------------------------
 Code: DeadLockEx.java
 public class DeadLockEx {
+
 private static final Object lock1 = new Object();
 private static final Object lock2 = new Object();
 
@@ -108,7 +109,7 @@ private static final Object lock2 = new Object();
         t2.start();
     }
 }
-What To Check in VisualVM
+**What To Check in VisualVM**
 -----------------------------
 
 Open Threads tab
@@ -125,7 +126,7 @@ BLOCKED
 
 WAITING
 
-ITC (Producer-Consumer) Example
+7)ITC (Producer-Consumer) Example
 ------------------------------------------------
 
 Use a wait/notify based print server.
@@ -138,7 +139,7 @@ RUNNABLE state
 
 BLOCKED state transitions
 
-What to Practice in VisualVM
+8)What to Practice in VisualVM
 ---------------------------------------
  Heap usage monitoring
  GC count tracking
@@ -146,7 +147,7 @@ What to Practice in VisualVM
  Deadlock detection
  CPU usage observation
 
-Important Observations
+9)Important Observations
 --------------------------------------
 
 wait() releases monitor
@@ -159,7 +160,7 @@ notifyAll() wakes all waiting threads
 
 Always use while() with wait()
 
-Troubleshooting
+10)Troubleshooting
 ---------------------------
 
 If process not visible:
