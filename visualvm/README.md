@@ -169,4 +169,4 @@ Restart VisualVM
 
 Ensure IntelliJ and VisualVM run with same permissions
 
-Make sure application is running
+Make sure application is running.
