@@ -7198,17 +7198,5 @@
     "low": 829.28,
     "volume": 36251145,
     "isUpdated": 401
-  },
-  {
-    "recordId": 601,
-    "registrationNumber": "REG1001",
-    "symbol": "NFLX",
-    "date": "2025-11-01",
-    "open": 211.3,
-    "close": 212.24,
-    "high": 212.61,
-    "low": 210.82,
-    "volume": 32877992,
-    "isUpdated": 400
   }
 ]
