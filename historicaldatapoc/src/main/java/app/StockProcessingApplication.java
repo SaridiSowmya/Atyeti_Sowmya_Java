@@ -19,7 +19,7 @@ public class StockProcessingApplication {
 
         new JsonWriter().write(records);
 
-        System.out.println("POC completed successfully");
+        System.out.println("POC is completed successfully");
 
     }
 }

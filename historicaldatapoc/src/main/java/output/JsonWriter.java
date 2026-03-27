@@ -39,7 +39,7 @@ public class JsonWriter {
             bw.write("]");
 
         } catch (Exception e) {
-            System.out.println("JSON error: " + e.getMessage());
+            System.out.println("JSON errors: " + e.getMessage());
         }
     }
 }

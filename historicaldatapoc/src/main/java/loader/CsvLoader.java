@@ -89,7 +89,7 @@ public class CsvLoader{
                 }
 
             } catch (Exception e) {
-                System.out.println("Error while reading file " + filePath + ": " + e.getMessage());
+                System.out.println("Errors while reading file " + filePath + ": " + e.getMessage());
             }
         }
 }
